@@ -1,13 +1,41 @@
-The Western Suburbs Croquet Club has two categories of membership, Senior and Open. They would like your help with an application form that will tell prospective members which category they will be placed.
+# Categorize New Member
 
-To be a senior, a member must be at least 55 years old and have a handicap greater than 7. In this croquet club, handicaps range from -2 to +26; the better the player the lower the handicap.
+The Western Suburbs Croquet Club has two membership categories: **Senior** and **Open**. Given each applicant’s age and handicap, return which category they belong in.
 
-Input
-Input will consist of a list of pairs. Each pair contains information for a single potential member. Information consists of an integer for the person's age and an integer for the person's handicap.
+A member is **Senior** only if both are true:
 
-Output
-Output will consist of a list of string values (in Haskell and C: Open or Senior) stating whether the respective member is to be placed in the senior or open category.
+- age ≥ **55**
+- handicap > **7**
 
-Example
-input =  [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]
-output = ["Open", "Open", "Senior", "Open", "Open", "Senior"]
+Otherwise they are **Open**.
+
+Handicaps range from `-2` to `+26`. Lower handicap means a better player.
+
+## Input / output
+
+Each applicant is a pair `[age, handicap]`. Return a list of `"Senior"` or `"Open"` in the same order.
+
+```text
+open_or_senior([[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]])
+# → ["Open", "Open", "Senior", "Open", "Open", "Senior"]
+```
+
+| Age | Handicap | Category | Why                         |
+|-----|----------|----------|-----------------------------|
+| 18  | 20       | Open     | age < 55                    |
+| 45  | 2        | Open     | age < 55                    |
+| 61  | 12       | Senior   | age ≥ 55 and handicap > 7   |
+| 37  | 6        | Open     | age < 55                    |
+| 21  | 21       | Open     | age < 55                    |
+| 78  | 9        | Senior   | age ≥ 55 and handicap > 7   |
+
+## Insight
+
+Walk the list once. For each pair, both conditions must hold:
+
+```text
+age >= 55  and  handicap > 7  →  "Senior"
+otherwise                     →  "Open"
+```
+
+An age of 55 with handicap 7 is still **Open** — handicap must be **strictly greater** than 7.
