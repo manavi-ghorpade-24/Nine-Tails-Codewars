@@ -1,11 +1,31 @@
-Make a program that filters a list of strings and returns a list with only your friends name in it.
+# Friend or Foe?
 
-If a name has exactly 4 letters in it, you can be sure that it has to be a friend of yours! Otherwise, you can be sure he's not...
+Filter a list of names and keep only your friends. A name is a friend if and only if it has **exactly 4 letters**.
 
-Input = ["Ryan", "Kieran", "Jason", "Yous"]
-Output = ["Ryan", "Yous"]
+Keep the original order. Input strings contain letters only.
 
-Input = ["Peter", "Stephen", "Joe"]
-Output = []
-Input strings will only contain letters.
-Note: keep the original order of the names in the output.
+```text
+friend(["Ryan", "Kieran", "Jason", "Yous"])  # → ["Ryan", "Yous"]
+friend(["Peter", "Stephen", "Joe"])          # → []
+```
+
+## Example
+
+| Name    | Letters | Friend? |
+|---------|---------|---------|
+| Ryan    | 4       | yes     |
+| Kieran  | 6       | no      |
+| Jason   | 5       | no      |
+| Yous    | 4       | yes     |
+| Peter   | 5       | no      |
+| Stephen | 7       | no      |
+| Joe     | 3       | no      |
+
+## Insight
+
+Walk the list once and keep names whose length is exactly 4:
+
+```text
+len(name) == 4  →  keep
+otherwise       →  drop
+```
