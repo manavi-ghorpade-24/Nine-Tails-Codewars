@@ -1,7 +1,34 @@
-Write a function that takes in a string of one or more words, and returns the same string, but with all words that have five or more letters reversed (just like the name of this kata). Strings passed in will consist of only letters and spaces. Spaces will be included only when more than one word is present.
+# Stop gninnipS My sdroW!
 
-Examples:
+Given a string of one or more words, reverse every word that has **five or more letters**. Shorter words stay as they are.
 
-"Hey fellow warriors"  --> "Hey wollef sroirraw" 
-"This is a test        --> "This is a test" 
-"This is another test" --> "This is rehtona test"
+The input contains only letters and spaces. Spaces appear only when there is more than one word.
+
+```text
+spin_words("Hey fellow warriors")  # → "Hey wollef sroirraw"
+spin_words("This is a test")       # → "This is a test"
+spin_words("This is another test") # → "This is rehtona test"
+```
+
+## Example
+
+`spin_words("Hey fellow warriors")`
+
+| Word     | Letters | Reversed? | Result    |
+|----------|---------|-----------|-----------|
+| Hey      | 3       | no        | `Hey`     |
+| fellow   | 6       | yes       | `wollef`  |
+| warriors | 8       | yes       | `sroirraw`|
+
+Join with spaces: `Hey wollef sroirraw`
+
+## Insight
+
+Split on spaces, reverse a word only when its length is at least 5, then join:
+
+```text
+len(word) >= 5  →  word[::-1]
+otherwise       →  word
+```
+
+A 4-letter word is left unchanged.
