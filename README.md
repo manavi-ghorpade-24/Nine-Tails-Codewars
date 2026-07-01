@@ -18,6 +18,7 @@ A personal collection of [Codewars](https://www.codewars.com/) solutions, one ka
 | [Create Phone Number](Create%20Phone%20Number/problem.md) | 6 | Join digits, slice into `(XXX) XXX-XXXX` |
 | [Delete occurrences if more than n times](Delete%20occurrences%20of%20an%20element%20if%20it%20occurs%20more%20than%20n%20times/problem.md) | 6 | Keep each value at most `n` times, in order |
 | [Stop gninnipS My sdroW!](Stop%20gninnipS%20My%20sdroW%21/problem.md) | 6 | Reverse words with length ≥ 5 |
+| [Write Number in Expanded Form](Write%20Number%20in%20Expanded%20Form/problem.md) | 6 | Place values joined with ` + `, skip zeros |
 | [Categorize New Member](Categorize%20New%20Member/problem.md) | 7 | Senior if age ≥ 55 and handicap > 7 |
 | [Dots on Domino's Bones](Dots%20on%20Domino's%20Bones/problem.md) | 7 | Total pips → `n(n + 1)(n + 2) / 2` |
 | [Friend or Foe?](Friend%20or%20Foe%3F/problem.md) | 7 | Keep names with exactly 4 letters |
