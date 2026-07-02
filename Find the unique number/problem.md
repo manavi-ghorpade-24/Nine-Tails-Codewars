@@ -24,12 +24,12 @@ find_uniq([0, 0, 0.55, 0, 0])     # → 0.55
 
 ## Insight
 
-The unique value is either among the first three elements, or it appears later. Compare the first three to learn the **common** number, then scan once for the value that differs:
+Compare the first three elements to learn the **common** number, then scan once for the value that differs:
 
 ```text
-arr[0] == arr[1]          →  common is arr[0]
-arr[1] == arr[2]          →  common is arr[1]
-otherwise (unique is first) →  common is arr[1] or arr[2]; unique is arr[0]
+arr[0] == arr[1]  →  common is arr[0]
+arr[1] == arr[2]  →  common is arr[1]   (unique is first)
+otherwise         →  common is arr[0]   (unique is arr[1])
 ```
 
 Then return the first `num != common`. One pass after a constant-time check is enough for the large test arrays.

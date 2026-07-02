@@ -17,6 +17,7 @@ A personal collection of [Codewars](https://www.codewars.com/) solutions, one ka
 | [Directions Reduction](Directions%20Reduction/problem.md) | 5 | Stack: pop opposite pairs (`N`↔`S`, `E`↔`W`) |
 | [Create Phone Number](Create%20Phone%20Number/problem.md) | 6 | Join digits, slice into `(XXX) XXX-XXXX` |
 | [Delete occurrences if more than n times](Delete%20occurrences%20of%20an%20element%20if%20it%20occurs%20more%20than%20n%20times/problem.md) | 6 | Keep each value at most `n` times, in order |
+| [Find the unique number](Find%20the%20unique%20number/problem.md) | 6 | All equal except one — find the outlier |
 | [Stop gninnipS My sdroW!](Stop%20gninnipS%20My%20sdroW%21/problem.md) | 6 | Reverse words with length ≥ 5 |
 | [Write Number in Expanded Form](Write%20Number%20in%20Expanded%20Form/problem.md) | 6 | Place values joined with ` + `, skip zeros |
 | [Categorize New Member](Categorize%20New%20Member/problem.md) | 7 | Senior if age ≥ 55 and handicap > 7 |
