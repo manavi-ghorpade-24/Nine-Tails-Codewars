@@ -14,6 +14,8 @@ A personal collection of [Codewars](https://www.codewars.com/) solutions, one ka
 
 | Kata | Kyu | Notes |
 |------|-----|--------|
+| [Sum of Intervals](Sum%20of%20Intervals/problem.md) | 4 | Sort, merge overlaps, sum `end - start` |
+| [Sum Strings as Numbers](%20Sum%20Strings%20as%20Numbers/problem.md) | 4 | Digit-by-digit add with carry (no `int()`) |
 | [Directions Reduction](Directions%20Reduction/problem.md) | 5 | Stack: pop opposite pairs (`N`↔`S`, `E`↔`W`) |
 | [Create Phone Number](Create%20Phone%20Number/problem.md) | 6 | Join digits, slice into `(XXX) XXX-XXXX` |
 | [Delete occurrences if more than n times](Delete%20occurrences%20of%20an%20element%20if%20it%20occurs%20more%20than%20n%20times/problem.md) | 6 | Keep each value at most `n` times, in order |
