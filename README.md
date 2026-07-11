@@ -8,6 +8,12 @@
   Katas solved. Chakra spent. Timeouts avoided.
 </p>
 
+<p align="center">
+  <a href="https://www.codewars.com/users/manavi-ghorpade-24">
+    <img src="https://www.codewars.com/users/manavi-ghorpade-24/badges/large" alt="Codewars profile: manavi-ghorpade-24">
+  </a>
+</p>
+
 A personal collection of [Codewars](https://www.codewars.com/) solutions, one kata at a time, with the problem, the insight, and the code in one place.
 
 ## Katas
