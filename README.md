@@ -15,6 +15,7 @@ A personal collection of [Codewars](https://www.codewars.com/) solutions, one ka
 | Kata | Kyu | Notes |
 |------|-----|--------|
 | [Smallest Possible Sum](smallest%20possible%20sum/problem.md) | 7 | Euclidean GCD → `gcd(X) × len(X)` |
+| [Create Phone Number](Create%20Phone%20Number/problem.md) | 6 | Join digits, slice into `(XXX) XXX-XXXX` |
 
 Each kata folder has:
 
