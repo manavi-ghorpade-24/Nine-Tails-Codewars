@@ -40,3 +40,9 @@ Each kata folder has:
 
 - `problem.md` — the statement, examples, and the key insight
 - `solution.py` (or `solutions.py`) — the implementation
+
+## System designs
+
+| Design | Notes |
+|--------|--------|
+| [LeetCode](System%20Designs/leetcode/design.md) | API + Redis + SQS workers; Docker sandbox for submissions |
