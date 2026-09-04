@@ -20,6 +20,7 @@ A personal collection of [Codewars](https://www.codewars.com/) solutions, one ka
 
 | Kata | Kyu | Notes |
 |------|-----|--------|
+| [Next smaller number with the same digits](Next%20smaller%20number%20with%20the%20same%20digits/problem.md) | 4 | Previous permutation of digits; `-1` if leading zero |
 | [Sum of Intervals](Sum%20of%20Intervals/problem.md) | 4 | Sort, merge overlaps, sum `end - start` |
 | [Sum Strings as Numbers](%20Sum%20Strings%20as%20Numbers/problem.md) | 4 | Digit-by-digit add with carry (no `int()`) |
 | [Directions Reduction](Directions%20Reduction/problem.md) | 5 | Stack: pop opposite pairs (`N`↔`S`, `E`↔`W`) |
